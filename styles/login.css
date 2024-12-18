@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}   
+body{  
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh;
+    animation: transitionIn 1s;
+}
+@keyframes transitionIn{
+    from{
+      opacity: 0;
+      transform: rotateX(-10deg);
+    }
+    to{
+      opacity: 1;
+      transform: rotateX(0);
+    }
+}
+.my-custom-row img{
+    height: auto;  
+    width: 500px;
+  
+}
+.d-grid .custom-btn,
+.d-grid .custom-btn2 {
+    text-decoration: none;
+    width: 100%;
+    margin-top: 10px;
+    border: 3px solid black;
+}
+.d-grid .custom-btn:hover, .d-grid .custom-btn2:hover{
+    background-color: #0e0e10;
+    color: #ffffff;
+}
+
+.d-grip hr{
+    background-color: black;
+}
+
+.form-floating .forgot-password {
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: end;    
+}
+
+.form-floating .forgot-password a{
+    text-decoration: none;
+    color: #aeaeae;
+    font-size: 12px;
+} 
+.card-header{
+    background-color: #0e0e10;
+}
+.logoSmall{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: #0e0e10;
+}
+.logoSmall img{
+    height: auto;
+    width: 100%;
+}
+
+@media (max-width: 576px){
+    .card{
+        width: 95%;
+    }
+    .card-header{
+        width: 100%;
+        background-color: #0e0e10;
+    }
+}

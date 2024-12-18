@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+body{
+    animation: transitionIn 1s;
+}
+@keyframes transitionIn{
+    from{
+      opacity: 0;
+      transform: rotateX(-10deg);
+    }
+    to{
+      opacity: 1;
+      transform: rotateX(0);
+    }
+}
+nav{
+    background-color: #0e0e10;
+}
+.top-container{
+    height: 30px;
+    width: 100%;
+}
+.navbar-brand{
+    margin-left: 20px;
+}
+.navbar-nav{
+    margin-right: 20px;
+}
+.nav-link{
+    color: white;
+}
+.vr{
+color: #ffffff;
+}
+.logoHolder{
+    height: auto;
+    width: 100px;
+}
+.custom-toggler .navbar-toggler-icon{
+    background-image: url('../images/list.svg');
+    font-size: 1rem;
+    background-color: white;
+}
+
+i{
+    font-size: 1.5rem;
+}
+.offcanvas-header{
+    background-color: #0e0e10;
+}
+.offcanvas-title{
+    height: auto;
+    width: 100px;
+}
+.offcanvas-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    line-height: 2;
+}
+[data-bs-dismiss="offcanvas"] {
+    background-image: url('../images/close-btn.svg');
+    font-size: 1rem;
+  } 
+.store{
+    background-color: #0e0e10;
+}
+footer{
+    background-color: #1e1e1e;
+}
+h5, p{
+    color: white;
+}
+footer li a{
+    text-decoration: none;
+    color: azure;
+}
+.card-header{
+    background-color: #0e0e10;
+}
+.bi-person{
+    font-size: 1.7rem;
+    vertical-align: middle;
+}
+a{
+    text-decoration: none;
+    color: #0e0e10;
+}
+.card-text{
+    color: #0e0e10;
+}
+@media (max-width: 576px){
+    .nav-link{
+        color: #0e0e10;
+    }
+    .d-flex a{
+        display: none;
+    }
+}
